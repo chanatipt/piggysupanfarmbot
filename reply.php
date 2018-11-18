@@ -29,6 +29,7 @@ if (sizeof($request_array['events']) > 0) {
 		$reply_message = '';
 		$command = '';
         $reply_token = $event['replyToken'];
+		print_r($event);
         if ($event['type'] == 'message') {
             if ($event['message']['type'] == 'text') {
                 $text = $event['message']['text'];
@@ -63,7 +64,7 @@ if (sizeof($request_array['events']) > 0) {
 			/* send back acknowledge message */
             $data = [
                 'replyToken' => $reply_token,
-                'messages' => [['type' => 'text', 'text' => $reply_message . ' + ' .$event['groupId']]],
+                'messages' => [['type' => 'text', 'text' => $reply_message]],
             ];
             $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
