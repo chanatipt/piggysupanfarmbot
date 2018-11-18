@@ -63,7 +63,7 @@ if (sizeof($request_array['events']) > 0) {
 			/* send back acknowledge message */
             $data = [
                 'replyToken' => $reply_token,
-                'messages' => [['type' => 'text', 'text' => $reply_message . ' + ' .$reply_token]],
+                'messages' => [['type' => 'text', 'text' => $reply_message . ' + ' .$event['source']['groudId']]],
             ];
             $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
