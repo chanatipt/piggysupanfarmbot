@@ -55,7 +55,7 @@ if (sizeof($request_array['events']) > 0) {
                     $reply_message = 'รอสักครู่ ปั่นรายงานก่อน';
 					$command = 'Report';
                 } else {
-                    $reply_message = 'ขอโทษนะไม่เข้าใจ "' . $text . '"';
+                    $reply_message = 'ขอโทษนะไม่เข้าใจ "' . $text . '"' + $event['source']['groupId'];
                 }
             }
         }
