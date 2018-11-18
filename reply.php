@@ -24,6 +24,7 @@ $request_array = json_decode($request, true);
 loop through events in the incoming request array */
 if (sizeof($request_array['events']) > 0) {
     foreach ($request_array['events'] as $event) {
+		echo $event;
         /* reply to users to
         acknowledge their messages */
 		$reply_message = '';
