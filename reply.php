@@ -24,7 +24,6 @@ $request_array = json_decode($request, true);
 loop through events in the incoming request array */
 if (sizeof($request_array['events']) > 0) {
     foreach ($request_array['events'] as $event) {
-		echo $event;
         /* reply to users to
         acknowledge their messages */
 		$reply_message = '';
@@ -64,7 +63,7 @@ if (sizeof($request_array['events']) > 0) {
 			/* send back acknowledge message */
             $data = [
                 'replyToken' => $reply_token,
-                'messages' => [['type' => 'text', 'text' => $reply_message]],
+                'messages' => [['type' => 'text', 'text' => $reply_message . ' + ' .$reply_token]],
             ];
             $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
 
