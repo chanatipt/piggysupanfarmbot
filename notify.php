@@ -22,7 +22,7 @@ function procmsg($topic, $msg)
 {
     $access_token = 'V0i3cfZS6ll0DkFLHR2TlrJs58DoWVd8EQrDwGcG/K4WZKrg5Ep92I8Hoi81VObqvs7e41tkQ8cHkYXzQL7yuA/FyDvsrDj8eqGCuO+DFsFY+HnMFSuBTZ/V0qgJ8nEXZKEwolQM/RzqEAqY5rviPQdB04t89/1O/w1cDnyilFU=';
     $channelSecret = '9f2ea25304594b5df4c74c8e50228d0f';
-	$pushID = '1e66e17df5a64258afcb3eaa38a61cdf';	
+	$pushID = 'C863d2206b62ace4687ce03c6cfb8c8dd';	
 	if ($msg == 'W0') {
 		$replyMsg = 'หยุดรดน้ำแล้วจ้า';
 	} else if ($msg == 'W1') {
