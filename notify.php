@@ -7,12 +7,11 @@ $server = "iot.eclipse.org";
 $port = 1883;
 $username = "";
 $password = "";
-$client_id = "piggy-farm-line-bot";
+$client_id = "piggy-supan-farm-line-bot";
 $mqtt = new Bluerhinos\phpMQTT($server, $port, $client_id);
 if (!$mqtt->connect(true, null, $username, $password)) {
     exit(1);
 }
-//$topics['chanatip/piggybkk/outputs'] = array("qos" => 0, "function" => "procmsg");
 $topics['chanatip/piggysuphan/outputs'] = array("qos" => 0, "function" => "procmsg");
 $mqtt->subscribe($topics, 0);
 while ($mqtt->proc()) {
@@ -21,8 +20,8 @@ while ($mqtt->proc()) {
 $mqtt->close();
 function procmsg($topic, $msg)
 {
-    $access_token = 'W7uUjdWdAR5rlMAhTCHZ11ESL1m/amYYEaMsvoFpy6Y8KcqL19qJp7sb/pGWiLqtSlgd+udUui8LBYAvaeds+YnHozApjfeoTH9kDhbdA3Y+vwaabNcbIhAKv/aR8EbuDe5JqkiYk+at/grNx9ERHgdB04t89/1O/w1cDnyilFU=';
-    $channelSecret = '06e34e972681b7ad4b6431475c81f9c6';
+    $access_token = 'V0i3cfZS6ll0DkFLHR2TlrJs58DoWVd8EQrDwGcG/K4WZKrg5Ep92I8Hoi81VObqvs7e41tkQ8cHkYXzQL7yuA/FyDvsrDj8eqGCuO+DFsFY+HnMFSuBTZ/V0qgJ8nEXZKEwolQM/RzqEAqY5rviPQdB04t89/1O/w1cDnyilFU=';
+    $channelSecret = '9f2ea25304594b5df4c74c8e50228d0f';
 	$pushID = 'Cee8d8a171a1356684fb550e250acb35a';	
 	if ($msg == 'W0') {
 		$replyMsg = 'หยุดรดน้ำแล้วจ้า';
