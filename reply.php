@@ -33,18 +33,18 @@ if (sizeof($request_array['events']) > 0) {
         if ($event['type'] == 'message') {
             if ($event['message']['type'] == 'text') {
                 $text = $event['message']['text'];
-                if (($text == 'รดน้ำ')||($text == 'WaterOn')) {
-					$reply_message = 'โอเค จะสั่งรดน้ำนะ';
-					$command = 'WaterOn';
-                } else if (($text == 'หยุดรดน้ำ')||($text == 'WaterOff')) {
-                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำแล้ว';
-					$command = 'WaterOff';
-                } else if (($text == 'ใส่ปุ๋ย')||($text == 'FertilizerOn')) {
-                    $reply_message = 'โอเค จะสั่งใส่ปุ๋ยนะ';
-					$command = 'FertilizerOn';
-                } else if (($text == 'หยุดใส่ปุ๋ย')||($text == 'FertilizerOff')) {
-                    $reply_message = 'โอเค จะสั่งหยุดใส่ปุ๋ยแล้ว';
-					$command = 'FertilizerOff';
+                if (($text == 'รด 1')||($text == 'รด1')||($text == 'FeedOn 1')||($text == 'FeedOn1')) {
+					$reply_message = 'โอเค จะสั่งรดน้ำโซน 1 นะ';
+					$command = 'Feed1On';
+                } else if (($text == 'หยุดรด 1')||($text == 'หยุดรด1')||($text == 'FeedOff 1')||($text == 'FeedOff1')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 1 แล้ว';
+					$command = 'Feed1Off';
+                } else if (($text == 'รด 2')||($text == 'รด2')||($text == 'FeedOn 2')||($text == 'FeedOn2')) {
+					$reply_message = 'โอเค จะสั่งรดน้ำโซน 2 นะ';
+					$command = 'Feed2On';
+                } else if (($text == 'หยุดรด 2')||($text == 'หยุดรด2')||($text == 'FeedOff 2')||($text == 'FeedOff2')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 2 แล้ว';
+					$command = 'Feed2Off';
                 } else if (($text == 'หยุดระบบ')||($text == 'SystemOff')) {
                     $reply_message = 'รับทราบ จะสั่งหยุดระบบแล้ว';
 					$command = 'SystemOff';
@@ -72,7 +72,7 @@ if (sizeof($request_array['events']) > 0) {
 
 			/* send valid command to Farm Controller */
             if ($mqtt->connect(true, null, $username, $password) && ($command !== '')) {
-                $mqtt->publish("chanatip/piggysuphan/inputs", $command);
+                $mqtt->publish("chanatip/piggyfarm/supan/inputs", $command);
                 $mqtt->close();
             } else {
                 echo "MQTT publish Time out!\n";
