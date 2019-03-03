@@ -31,16 +31,24 @@ function procmsg($topic, $msg)
 		$replyMsg = 'หยุดรดน้ำโซน 2 แล้วจ้า';
 	} else if ($msg == 'F21') {
 		$replyMsg = 'เริ่มรดน้ำโซน 2 แล้วจ้า';
+	} else if ($msg == 'F30') {
+		$replyMsg = 'หยุดรดน้ำโซน 3 แล้วจ้า';
+	} else if ($msg == 'F31') {
+		$replyMsg = 'เริ่มรดน้ำโซน 3 แล้วจ้า';
 	} else if ($msg == 'r1') {
 		$replyMsg = 'รายงานสถานะนะครับ';
 	} else if ($msg == 'f10') {
 		$replyMsg = 'ไม่ได้รดน้ำโซน 1 อยู่';
 	} else if ($msg == 'f20') {
 		$replyMsg = 'ไม่ได้รดน้ำโซน 2 อยู่';
+	} else if ($msg == 'f30') {
+		$replyMsg = 'ไม่ได้รดน้ำโซน 3 อยู่';
 	} else if ($msg == 'f11') {
 		$replyMsg = 'กำลังรดน้ำโซน 1 อยู่';
 	} else if ($msg == 'f21') {
 		$replyMsg = 'กำลังรดน้ำโซน 2 อยู่';
+	} else if ($msg == 'f31') {
+		$replyMsg = 'กำลังรดน้ำโซน 3 อยู่';
 	} else if ($msg == 'e1') {
 		$replyMsg = 'มีความผิดพลาดในระบบ';
 	}
