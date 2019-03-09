@@ -3,7 +3,8 @@
 include 'phpMQTT.php';
 require "vendor/autoload.php";
 
-$server = "iot.eclipse.org";
+/* $server = "iot.eclipse.org"; */
+$server = "broker.hivemq.com";
 $port = 1883;
 $username = "";
 $password = "";
@@ -52,7 +53,7 @@ function procmsg($topic, $msg)
 	} else if ($msg == 'e1') {
 		$replyMsg = 'มีความผิดพลาดในระบบ';
 	}
-	
+
     $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
     $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
