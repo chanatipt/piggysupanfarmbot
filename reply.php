@@ -37,21 +37,39 @@ if (sizeof($request_array['events']) > 0) {
                 if (($text == 'รด 1')||($text == 'รด1')||($text == 'FeedOn 1')||($text == 'FeedOn1')) {
 					$reply_message = 'โอเค จะสั่งรดน้ำโซน 1 นะ';
 					$command = 'Feed1On';
-                } else if (($text == 'หยุดรด 1')||($text == 'หยุดรด1')||($text == 'FeedOff 1')||($text == 'FeedOff1')) {
-                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 1 แล้ว';
-					$command = 'Feed1Off';
                 } else if (($text == 'รด 2')||($text == 'รด2')||($text == 'FeedOn 2')||($text == 'FeedOn2')) {
 					$reply_message = 'โอเค จะสั่งรดน้ำโซน 2 นะ';
 					$command = 'Feed2On';
                 } else if (($text == 'รด 3')||($text == 'รด3')||($text == 'FeedOn 3')||($text == 'FeedOn3')) {
 					$reply_message = 'โอเค จะสั่งรดน้ำโซน 3 นะ';
 					$command = 'Feed3On';
+                } else if (($text == 'รด 4')||($text == 'รด4')||($text == 'FeedOn 4')||($text == 'FeedOn4')) {
+					$reply_message = 'โอเค จะสั่งรดน้ำโซน 4 นะ';
+					$command = 'Feed4On';
+                } else if (($text == 'รด 5')||($text == 'รด5')||($text == 'FeedOn 5')||($text == 'FeedOn5')) {
+					$reply_message = 'โอเค จะสั่งรดน้ำโซน 5 นะ';
+					$command = 'Feed5On';
+                } else if (($text == 'รด 6')||($text == 'รด6')||($text == 'FeedOn 6')||($text == 'FeedOn6')) {
+					$reply_message = 'โอเค จะสั่งรดน้ำโซน 6 นะ';
+					$command = 'Feed6On';
+                } else if (($text == 'หยุดรด 1')||($text == 'หยุดรด1')||($text == 'FeedOff 1')||($text == 'FeedOff1')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 1 แล้ว';
+					$command = 'Feed1Off';
                 } else if (($text == 'หยุดรด 2')||($text == 'หยุดรด2')||($text == 'FeedOff 2')||($text == 'FeedOff2')) {
                     $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 2 แล้ว';
 					$command = 'Feed2Off';
                 } else if (($text == 'หยุดรด 3')||($text == 'หยุดรด3')||($text == 'FeedOff 3')||($text == 'FeedOff3')) {
                     $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 3 แล้ว';
 					$command = 'Feed3Off';
+                } else if (($text == 'หยุดรด 4')||($text == 'หยุดรด4')||($text == 'FeedOff 4')||($text == 'FeedOff4')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 4 แล้ว';
+					$command = 'Feed4Off';
+                } else if (($text == 'หยุดรด 5')||($text == 'หยุดรด5')||($text == 'FeedOff 5')||($text == 'FeedOff5')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 5 แล้ว';
+					$command = 'Feed5Off';
+                } else if (($text == 'หยุดรด 6')||($text == 'หยุดรด6')||($text == 'FeedOff 6')||($text == 'FeedOff6')) {
+                    $reply_message = 'โอเค จะสั่งหยุดรดน้ำโซน 6 แล้ว';
+					$command = 'Feed6Off';
                 } else if (($text == 'หยุดระบบ')||($text == 'SystemOff')) {
                     $reply_message = 'รับทราบ จะสั่งหยุดระบบแล้ว';
 					$command = 'SystemOff';

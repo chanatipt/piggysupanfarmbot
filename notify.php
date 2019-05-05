@@ -36,6 +36,18 @@ function procmsg($topic, $msg)
 		$replyMsg = 'หยุดรดน้ำโซน 3 แล้วจ้า';
 	} else if ($msg == 'F31') {
 		$replyMsg = 'เริ่มรดน้ำโซน 3 แล้วจ้า';
+	} else if ($msg == 'F40') {
+		$replyMsg = 'หยุดรดน้ำโซน 4 แล้วจ้า';
+	} else if ($msg == 'F41') {
+		$replyMsg = 'เริ่มรดน้ำโซน 4 แล้วจ้า';
+	} else if ($msg == 'F50') {
+		$replyMsg = 'หยุดรดน้ำโซน 5 แล้วจ้า';
+	} else if ($msg == 'F51') {
+		$replyMsg = 'เริ่มรดน้ำโซน 5 แล้วจ้า';
+	} else if ($msg == 'F60') {
+		$replyMsg = 'หยุดรดน้ำโซน 6 แล้วจ้า';
+	} else if ($msg == 'F61') {
+		$replyMsg = 'เริ่มรดน้ำโซน 6 แล้วจ้า';
 	} else if ($msg == 'r1') {
 		$replyMsg = 'รายงานสถานะนะครับ';
 	} else if ($msg == 'f10') {
@@ -44,12 +56,24 @@ function procmsg($topic, $msg)
 		$replyMsg = 'ไม่ได้รดน้ำโซน 2 อยู่';
 	} else if ($msg == 'f30') {
 		$replyMsg = 'ไม่ได้รดน้ำโซน 3 อยู่';
+	} else if ($msg == 'f40') {
+		$replyMsg = 'ไม่ได้รดน้ำโซน 4 อยู่';
+	} else if ($msg == 'f50') {
+		$replyMsg = 'ไม่ได้รดน้ำโซน 5 อยู่';
+	} else if ($msg == 'f60') {
+		$replyMsg = 'ไม่ได้รดน้ำโซน 6 อยู่';
 	} else if ($msg == 'f11') {
 		$replyMsg = 'กำลังรดน้ำโซน 1 อยู่';
 	} else if ($msg == 'f21') {
 		$replyMsg = 'กำลังรดน้ำโซน 2 อยู่';
 	} else if ($msg == 'f31') {
 		$replyMsg = 'กำลังรดน้ำโซน 3 อยู่';
+	} else if ($msg == 'f41') {
+		$replyMsg = 'กำลังรดน้ำโซน 4 อยู่';
+	} else if ($msg == 'f51') {
+		$replyMsg = 'กำลังรดน้ำโซน 5 อยู่';
+	} else if ($msg == 'f61') {
+		$replyMsg = 'กำลังรดน้ำโซน 6 อยู่';
 	} else if ($msg == 'e1') {
 		$replyMsg = 'มีความผิดพลาดในระบบ';
 	}
