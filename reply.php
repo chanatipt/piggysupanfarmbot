@@ -13,7 +13,14 @@ $password = "";
 $client_id = "piggy-supan-farm-line-bot";
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
+
+/* piggy supan farm */
+/*
 $ACCESS_TOKEN = 'V0i3cfZS6ll0DkFLHR2TlrJs58DoWVd8EQrDwGcG/K4WZKrg5Ep92I8Hoi81VObqvs7e41tkQ8cHkYXzQL7yuA/FyDvsrDj8eqGCuO+DFsFY+HnMFSuBTZ/V0qgJ8nEXZKEwolQM/RzqEAqY5rviPQdB04t89/1O/w1cDnyilFU=';
+*/
+
+/* piggy bkk farm */
+$ACCESS_TOKEN = 'W7uUjdWdAR5rlMAhTCHZ11ESL1m/amYYEaMsvoFpy6Y8KcqL19qJp7sb/pGWiLqtSlgd+udUui8LBYAvaeds+YnHozApjfeoTH9kDhbdA3Y+vwaabNcbIhAKv/aR8EbuDe5JqkiYk+at/grNx9ERHgdB04t89/1O/w1cDnyilFU=';
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 $mqtt = new Bluerhinos\phpMQTT($server, $port, $client_id);
 
