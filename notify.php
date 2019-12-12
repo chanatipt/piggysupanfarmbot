@@ -22,16 +22,16 @@ $mqtt->close();
 function procmsg($topic, $msg)
 {
 	/* piggy supan farm */
-	/*
     $access_token = 'V0i3cfZS6ll0DkFLHR2TlrJs58DoWVd8EQrDwGcG/K4WZKrg5Ep92I8Hoi81VObqvs7e41tkQ8cHkYXzQL7yuA/FyDvsrDj8eqGCuO+DFsFY+HnMFSuBTZ/V0qgJ8nEXZKEwolQM/RzqEAqY5rviPQdB04t89/1O/w1cDnyilFU=';
     $channelSecret = '9f2ea25304594b5df4c74c8e50228d0f';
 	$pushID = 'C863d2206b62ace4687ce03c6cfb8c8dd';
-	*/
 
 	/* piggy bkk farm */
+	/*
     $access_token = 'W7uUjdWdAR5rlMAhTCHZ11ESL1m/amYYEaMsvoFpy6Y8KcqL19qJp7sb/pGWiLqtSlgd+udUui8LBYAvaeds+YnHozApjfeoTH9kDhbdA3Y+vwaabNcbIhAKv/aR8EbuDe5JqkiYk+at/grNx9ERHgdB04t89/1O/w1cDnyilFU=';
     $channelSecret = '06e34e972681b7ad4b6431475c81f9c6';
     $pushID = 'Cee8d8a171a1356684fb550e250acb35a';
+	*/
 	if ($msg == 'F10') {
 		$replyMsg = 'หยุดรดน้ำโซน 1 แล้วจ้า';
 	} else if ($msg == 'F11') {
