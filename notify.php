@@ -56,8 +56,10 @@ function procmsg($topic, $msg)
 		$replyMsg = 'หยุดรดน้ำโซน 6 แล้วจ้า';
 	} else if ($msg == 'F61') {
 		$replyMsg = 'เริ่มรดน้ำโซน 6 แล้วจ้า';
+	} else if ($msg == 'r0') {
+		$replyMsg = 'ระบบไม่เปิดอยู่ครับ';
 	} else if ($msg == 'r1') {
-		$replyMsg = 'รายงานสถานะนะครับ';
+		$replyMsg = 'ระบบเปิดอยู่ครับ';
 	} else if ($msg == 'f10') {
 		$replyMsg = 'ไม่ได้รดน้ำโซน 1 อยู่';
 	} else if ($msg == 'f20') {
